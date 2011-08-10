@@ -1,0 +1,164 @@
+skills:
+  computer_languages:
+    - name: C
+      projects:
+    - name: C++
+      projects:
+    - name: Go
+      projects:
+        - name: GoAuth
+          description: >
+            An OAuth library for the Go programming language.
+          url: http://github.com/alloy-d/goauth/
+          date: Summer 2010
+        - name: now.go
+          description: >
+            A simple to-do queue manager that operates over HTTP and
+            stores its data in a single plain text file.
+          url: http://github.com/alloy-d/now.go/
+          date: Summer 2010
+        - name: miu.go
+          description: >
+            An idiomatic Go program to generate theorems of the MIU-system
+            in Douglas Hofstadter's _Gödel, Escher, Bach_.
+          url: https://gist.github.com/480919
+          more: http://text.alloy-d.net/post/836887063/an-miu-system-theorem-generator-in-go
+          date: Summer 2010
+    - name: Java
+      projects:
+        - name: Heptadecagon Constructor
+          description: >
+            A program to demonstrate the construction of a regular
+            heptadecagon using only a straight-edge and compass.
+          context: >
+            Written voluntarily for a mathematics course at the
+            New Jersey Governor's School in the Sciences.
+          date: Summer 2007
+    - name: JavaScript
+      projects:
+        - name: canvas51
+          description: >
+            A `<canvas>` animation using elements of the Flash games
+            _Robot Unicorn Attack_ and _Dolphin Olympics_.
+          url: http://github.com/alloy-d/canvas51/
+          date: Winter 2010
+        - name: doodles
+          description: >
+            Miscellaneous `<canvas>` drawings.
+          url: http://github.com/alloy-d/doodles/
+    - name: LaTeX
+      projects:
+        - name: Homework
+          description: >
+            Homework for computer science classes.
+    - name: Perl
+      projects:
+        - name: 12th Grade Science Fair Project
+          description: >
+            A system for scanning Wikipedia articles for important terms;
+            designed as part of a system for automatically generating
+            hyperlinks among articles.
+          date: Spring 2008
+        - name: MIPS subset assembler
+          description: >
+            A script to assemble a subset of the MIPS assembly language.
+          context: >
+            Written voluntarily for RPI's CSCI 2500, Computer Organization.
+          date: Spring 2009
+    - name: PHP
+      projects:
+        - name: notadouche
+          description: >
+            A simple "social anti-networking" site.
+          url: http://notadouche.com/
+          date: Spring 2009
+    - name: Prolog
+      projects:
+        - name: Blocks
+          description: >
+            A program to keep track of stacks of blocks on a table
+            and answer questions about them phrased in natural language.
+          context: >
+            Written for RPI's CSCI 4430, Programming Languages.
+          date: Spring 2010
+    - name: Python
+      projects:
+        - name: Cirqueti
+          description: >
+            A website for writers, focusing on easy editing and peer critique.
+          date: Summer 2009
+        - name: Twitter scripts
+          description: >
+            Small scripts for interacting with Twitter, including hooks for
+            Git and Mercurial and a daemon for automatically tweeting the
+            contents of a user's `.plan`.
+    - name: Ruby
+      projects:
+        - name: mimi
+          description: >
+            A simple image importer using Qt.
+          date: Winter 2009-2010
+        - name: Dexter
+          description: >
+            A command-line interface to a database of Pokémon information.
+          date: Spring 2010
+    - name: Scheme
+      projects:
+        - name: Timing attack
+          description: >
+            An exploit taking advantage of a naive password checking
+            implementation.
+          context: >
+            Written for RPI's CSCI 4971, Secure Software Principles.
+          date: Spring 2010
+    - name: SQL
+    - name: UNIX Shell
+    - name: HTML/CSS
+      projects:
+        - name: Tumblr themes
+          description: >
+            Themes for Tumblr-based blogs.
+    - name: Common Lisp
+      projects:
+        - name: Stumpwm configuration
+          url: https://github.com/alloy-d/dotfiles/blob/master/.stumpwmrc 
+    - name: Erlang
+      projects:
+        - name: Chess solver
+          description: >
+            A parallel, distributed program for finding optimal moves in
+            a game of chess.
+          context: >
+            Written for RPI's CSCI 4430, Programming Languages.
+            Implemented voluntarily in Erlang rather than the class's
+            standard SALSA and Java.
+          date: Spring 2010
+    - name: Haskell
+      projects:
+        - name: Lambda calculus evaluator
+          description: >
+            A program simplifying lambda calculus expressions.
+          context: >
+            Written for RPI's CSCI 4430, Programming Languages, to verify
+            the operation of an Oz interpreter for a Scheme-like language.
+          date: Spring 2010
+    - name: Lua
+      projects:
+        - name: Awesome configuration
+          description: >
+            Configuration for the Awesome window manager.
+    - name: MIPS Assembly
+    - name: Scala
+    - name: TCL
+      projects:
+        - name: Verification of Cisco device configurations.
+    - name: Visual Basic
+      projects:
+        - name: Target tracking
+          description: >
+            A command-line system for tracking simulated targets
+            using a Kalman filter.
+          context: >
+            Group project at the New Jersey Governor's School in the Sciences.
+          date: Summer 2007
+    - name: x86 Assembly
