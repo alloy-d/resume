@@ -2,6 +2,12 @@ skills:
   computer_languages:
     - name: C
       projects:
+        - name: MIPS Simulator
+          description: >
+            A simulation of a CPU operating on a subset of MIPS instructions.
+          context: >
+            Written for RPI's CSCI 2500, Computer Organization.
+          date: Spring 2009
     - name: C++
       projects:
     - name: Go
