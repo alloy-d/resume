@@ -174,7 +174,7 @@ skills:
     - name: Scala
     - name: TCL
       projects:
-        - name: Verification of Cisco device configurations.
+        - name: Verification of Cisco device configurations
     - name: Visual Basic
       projects:
         - name: Target tracking
