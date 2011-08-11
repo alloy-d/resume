@@ -8,6 +8,17 @@ data = YAML.load_file 'data.yaml'
 out = Pathname.new 'languages/index.html'
 outdir = out.dirname
 
+description = <<EOF
+This is a nearly comprehensive account of the programming language
+experience that I consider important.
+
+Most of the projects listed here are voluntary efforts; class
+assignments are generally omitted unless I put forth
+greater-than-average effort or gained a lot in completing them.
+EOF
+
+description = Maruku.new(description).to_html
+
 outdir.mkdir if not outdir.exist?
 
 out.open("w") do |o|
@@ -17,6 +28,8 @@ out.open("w") do |o|
   o.puts "<link rel='stylesheet' href='/resume/css/style.css' />"
   o.puts "</head>\n<body>"
 
+  o.puts "<h1>Programming Language Experience</h1>"
+  o.puts description
   o.puts "<ul id='languages'>"
   data['skills']['computer_languages'].each do |lang|
     o.puts "<li id='#{lang['name']}'>"
@@ -32,10 +45,12 @@ out.open("w") do |o|
         end
         if not proj['description'].nil?
           description = Maruku.new(proj['description']).to_html
+          description.gsub!(/<\/?p>/, "") # FIXME: this is ridiculous.
           o.puts "<p class='description'>#{description}</p>"
         end
         if not proj['context'].nil?
           context = Maruku.new(proj['context']).to_html
+          context.gsub!(/<\/?p>/, "")     # FIXME: this too.
           o.puts "<p class='context'>#{context}</p>"
         end
         if not proj['url'].nil?
