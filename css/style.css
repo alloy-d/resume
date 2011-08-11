@@ -1,0 +1,28 @@
+body {
+  font-family: 'Courier New', 'Courier', monospace;
+  font-size: 100%;
+  margin-left: 4ex;
+  width: 80ex;
+}
+
+ul#languages {
+  list-style-type: none;
+  padding: 0;
+}
+ul#languages p.name {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+ul#languages ol.projects {
+  list-style-type: none;
+  margin-left: 4ex;
+  padding: 0;
+}
+ul#languages ol.projects p.name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+ul#languages ol.projects p.date {
+  font-style: italic;
+  margin: 0;
+}

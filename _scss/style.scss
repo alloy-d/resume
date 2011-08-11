@@ -1,0 +1,38 @@
+body {
+  font: {
+    family: 'Courier New', 'Courier', monospace;
+    size: 100%;
+  }
+  margin-left: 4ex;
+  width: 80ex;
+}
+
+ul#languages {
+  list-style-type: none;
+  padding: 0;
+
+  p.name {
+    font: {
+      size: 2em;
+    }
+    margin-bottom: 0;
+  }
+
+  ol.projects {
+    list-style-type: none;
+    margin-left: 4ex;
+    padding: 0;
+
+    p.name {
+      font: {
+        size: 1.2em;
+        weight: bold;
+      }
+    }
+
+    p.date {
+      font-style: italic;
+      margin: 0;
+    }
+  }
+}
