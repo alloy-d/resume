@@ -1,0 +1,8 @@
+exclude:
+    - .hgignore
+    - generator.rb
+    - css/default.css.do
+    - generator.rb
+    - languages/index.html.do
+    - pdf/default.pdf.do
+    - pdf/resume.tex
