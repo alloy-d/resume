@@ -30,14 +30,16 @@ outdir.mkdir if not outdir.exist?
 out.open("w") do |o|
   o.puts "<!DOCTYPE html>"
   o.puts "<html>\n<head>"
-  o.puts "<title>Adam Lloyd - Programming Languages</title>"
+  o.puts "<title>Adam Lloyd - Programming Language Experience</title>"
   o.puts "<link rel='stylesheet' href='/resume/css/style.css' />"
   o.puts "</head>\n<body>"
 
   o.puts "<h1>Programming Language Experience</h1>"
   o.puts description
   o.puts "<ul id='languages'>"
-  data['skills']['computer_languages'].each do |lang|
+
+  langs = data['skills']['computer_languages'].sort {|a,b| a['name'] <=> b['name']}
+  langs.each do |lang|
     o.puts "<li id='#{lang['name']}'>"
     o.puts "<p class='name'>#{lang['name']}</p>"
     if not lang['projects'].nil?
