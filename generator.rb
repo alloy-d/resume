@@ -2,10 +2,16 @@
 require 'pathname'
 
 require 'maruku'
+require 'trollop'
 require 'yaml'
 
-data = YAML.load_file 'data.yaml'
-out = Pathname.new 'languages/index.html'
+opts = Trollop::options do
+  opt :out, "Output file", :default => 'languages/index.html'
+  opt :in, "Input file", :default => 'data.yaml'
+end
+
+data = YAML.load_file opts[:in]
+out = Pathname.new opts[:out]
 outdir = out.dirname
 
 description = <<EOF
