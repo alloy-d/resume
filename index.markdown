@@ -1,5 +1,6 @@
 ---
 layout: default
+stylesheets: ['/resume/css/style.css']
 ---
 
 # Adam Lloyd &lt;<awl@umd.edu>&gt;

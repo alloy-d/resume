@@ -3,7 +3,11 @@
   <head>
     <title>Adam Lloyd{% if page.title %} - {{ page.title }}{% endif %}</title>
     <style>
-@import url('/resume/css/style.css');
+{% if page.stylesheets %}
+  {% for stylesheet in page.stylesheets %}
+    @import url('{{ stylesheet }}');
+  {% endfor %}
+{% endif %}
     </style>
   </head>
   <body>
