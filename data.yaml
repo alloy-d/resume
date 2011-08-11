@@ -10,6 +10,17 @@ skills:
           date: Spring 2009
     - name: C++
       projects:
+    - name: Clojure
+      projects:
+        - name: Crumblr
+          description: >
+            An implementation of Tumblr's theme engine for use in local
+            theme development.
+          date: Summer 2011
+    - name: CoffeeScript
+      projects:
+        - name: HTML canvas doodles
+          date: Summer 2011
     - name: Go
       projects:
         - name: GoAuth
