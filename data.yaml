@@ -87,7 +87,7 @@ skills:
         - name: notadouche
           description: >
             A simple "social anti-networking" site.
-          url: http://notadouche.com/
+          more: http://notadouche.com/
           date: Spring 2009
     - name: Prolog
       projects:
@@ -109,16 +109,19 @@ skills:
             Small scripts for interacting with Twitter, including hooks for
             Git and Mercurial and a daemon for automatically tweeting the
             contents of a user's `.plan`.
+          url: http://github.com/alloy-d/twitter-scripts/
     - name: Ruby
       projects:
         - name: mimi
           description: >
             A simple image importer using Qt.
           date: Winter 2009-2010
+          url: http://github.com/alloy-d/mimi/
         - name: Dexter
           description: >
             A command-line interface to a database of Pokémon information.
           date: Spring 2010
+          url: http://github.com/alloy-d/dexter/
     - name: Scheme
       projects:
         - name: Timing attack
@@ -135,6 +138,8 @@ skills:
         - name: Tumblr themes
           description: >
             Themes for Tumblr-based blogs.
+          url: http://github.com/alloy-d/tumblr/
+          more: http://tumblr.com/themes/by/alloy-d/
     - name: Common Lisp
       projects:
         - name: Stumpwm configuration
@@ -164,6 +169,7 @@ skills:
         - name: Awesome configuration
           description: >
             Configuration for the Awesome window manager.
+          url: https://github.com/alloy-d/dotfiles/blob/5119b676a0e9e28809b0bf2915f409b4f50a377c/.config/awesome/rc.lua
     - name: MIPS Assembly
     - name: Scala
     - name: TCL
