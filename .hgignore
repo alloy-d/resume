@@ -3,7 +3,6 @@ syntax: glob
 *.aux
 *.log
 *.out
-*.pdf
 
 .redo
 _site/*
