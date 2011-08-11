@@ -15,7 +15,7 @@ out = Pathname.new opts[:out]
 outdir = out.dirname
 
 description = <<EOF
-This is a nearly comprehensive account of the programming language
+This is a nearly comprehensive account of the computer language
 experience that I consider important.
 
 Most of the projects listed here are voluntary efforts; class
@@ -30,11 +30,11 @@ outdir.mkdir if not outdir.exist?
 out.open("w") do |o|
   o.puts "<!DOCTYPE html>"
   o.puts "<html>\n<head>"
-  o.puts "<title>Adam Lloyd - Programming Language Experience</title>"
+  o.puts "<title>Adam Lloyd - Computer Language Experience</title>"
   o.puts "<link rel='stylesheet' href='/resume/css/style.css' />"
   o.puts "</head>\n<body>"
 
-  o.puts "<h1>Programming Language Experience</h1>"
+  o.puts "<h1>Computer Language Experience</h1>"
   o.puts description
   o.puts "<ul id='languages'>"
 
