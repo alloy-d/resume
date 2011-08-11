@@ -7,3 +7,4 @@ syntax: glob
 
 .redo
 _site/*
+.sass-cache/*
