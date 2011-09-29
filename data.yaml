@@ -41,6 +41,24 @@ skills:
           url: https://gist.github.com/480919
           more: http://text.alloy-d.net/post/836887063/an-miu-system-theorem-generator-in-go
           date: Summer 2010
+        - name: dotplan
+          description: >
+            A simple program that watches a user's home directory via Linux's
+            `inotify` and tweets the contents of the `.plan` file when it
+            changes.
+          url: http://github.com/alloy-d/dotplan/
+          date: Fall 2011
+        - name: talon
+          description: >
+            A fun program that displays information about a Twitter user in the
+            format of
+            [`finger`](https://secure.wikimedia.org/wikipedia/en/wiki/Finger_protocol)
+          url: http://github.com/alloy-d/talon/
+          date: Fall 2011
+        - name: go140
+          description: >
+            A simple library for interacting with Twitter.
+          url: http://github.com/alloy-d/go140/
     - name: Java
       projects:
         - name: Heptadecagon Constructor
