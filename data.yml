@@ -26,30 +26,46 @@ skills:
       - AWS (EC2, S3, Route53, and others)
 
 positions:
-  - title: Lead Engineer
+  - title: Lead Software Engineer
     company: Overture
     term:
       start: Nov. 2014
       finish: Oct. 2015
-    responsibilities:
-      - Built a lot of prototypes.
-      - Embraced DevOps.
-      - Took on technical leadership.
+    highlights:
+      - Provided infrastructural operations support to both the development team and the company at large.  As demands grew, transitioned from higher-level PaaS services to closely managed virtual servers.
+      - Built processes that enabled both deployment to virtual servers and development in a local, VM-based environment that mirrored the production servers.
+      - Coordinated the efforts of specialized engineers, including an iOS developer and a media scientist.
+      - Performed collaborative architecture and code reviews; provided mentorship and debugging help.
+      - Worked closely with the founder to streamline design and development workflows; ran an Agile process.
+      - Prototyped product and service ideas.  Put significant work into at least three web frontend prototypes, as well as a proof-of-concept video processing service.
 
   - title: Sr. Software Engineer
     company: Jibe
     term:
       start: Mar. 2012
       finish: Oct. 2014
+    highlights:
+      - Worked with operations and sales teams to standardize and document client onboarding and billing processes.  Streamlined billing and reporting code.
+      - Hired a great team to continue to support and build the product and to take on related projects around the company.
+      - "Obsessed over a zero-downtime deploy process.  Maintained development and deployment practices that resulted in the least downtime across the company's offerings."
+      - "Implemented a service to track and report views and conversions of job posts.  Analyzed this data across various markets and services."
+      - "Designed a process for automatic batch posting, and worked with clients to implement it."
 
   - title: Software Engineer
     company: Jibe
     term:
       start: Jan. 2012
       finish: Mar. 2012
+    highlights:
+      - "Created a bookmarklet-based integration to allow corporate clients to interact with Jibe's job distribution product from within their applicant tracking systems."
+      - "Integrated with job posting endpoints using various techniques: APIs, HTTP automation, browser automation, and in one extreme case, even an army of custom routers deployed around the country."
+      - "Built a web frontend to enable clients to control and track their postings---mostly in IE8."
 
   - title: Software Engineering Intern
     company: Jibe
     term:
       start: Oct. 2011
       finish: Jan. 2012
+    highlights:
+      - "Built an internal tool to allow the operations team to view and update data around corporate clients and their candidates."
+      - "Refactored a monolithic, serial, client-centric scraper codebase into a modular, parallelizable library that removed code duplication based on the clients' applicant tracking systems."
