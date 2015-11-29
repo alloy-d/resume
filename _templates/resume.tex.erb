@@ -197,13 +197,13 @@
 <% data.positions.each do |position| -%>
 \textbf{<%= position.title %>},
 <%= position.company %> \hfill \textbf{<%= position.term.start %>--<%= position.term.finish %>}
-<% if position.responsibilities && !position.responsibilities.empty? -%>
-<% position.responsibilities.each do |responsibility| -%>
+<% if position.highlights && !position.highlights.empty? -%>
+<% position.highlights.each do |highlight| -%>
 \begin{innerlist}
-\item <%= responsibility %>
+\item <%= highlight %>
 \end{innerlist}
-<% end # position responsibilities -%>
-<% end # position responsibilities empty? -%>
+<% end # position highlights -%>
+<% end # position highlights empty? -%>
 
 <% end # positions -%>
 
@@ -220,17 +220,7 @@ USA
         \end{innerlist}
 \blankline
 
-\href{http://www.rpi.edu/}{\textbf{Rensselaer Polytechnic Institute}},
-Troy, New York, USA
-
-\textit{B.S.,
-        \href{http://www.cs.rpi.edu/}{Computer Science}}
-        \begin{innerlist}
-        \item Overall GPA: 3.37
-        \item Attendance: fall 2008 through spring 2010
-        \end{innerlist}
-
-
+<% end # positions -%>
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
