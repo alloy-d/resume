@@ -19,7 +19,7 @@ end.compact
 data = Hashie::Mash.new(YAML.load_file(INPUT))
 
 templates.each do |(tmplfile, outfile)|
-  template = ERB.new(File.read(tmplfile))
+  template = ERB.new(File.read(tmplfile), nil, "-")
   out = OUTDIR + outfile
   puts "rendering #{tmplfile} -> #{OUTDIR + outfile}..."
   out.write(template.result(binding))
