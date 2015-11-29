@@ -21,9 +21,9 @@ skills:
       - Vagrant
       - Packer
       - Docker
-  - group: Platforms
-    items:
-      - AWS (EC2, S3, Route53, and others)
+  # - group: Platforms
+  #   items:
+  #     - AWS (EC2, S3, Route53, and others)
 
 positions:
   - title: Lead Software Engineer
@@ -46,10 +46,9 @@ positions:
       finish: Oct. 2014
     highlights:
       - Worked with operations and sales teams to standardize and document client onboarding and billing processes.  Streamlined billing and reporting code.
-      - Hired a great team to continue to support and build the product and to take on related projects around the company.
-      - "Obsessed over a zero-downtime deploy process.  Maintained development and deployment practices that resulted in the least downtime across the company's offerings."
+      - Hired a team to support and build the product and take on related projects.
+      - "Obsessed over a zero-downtime deploy process.  Maintained development and deployment practices that resulted in extremely low downtime."
       - "Implemented a service to track and report views and conversions of job posts.  Analyzed this data across various markets and services."
-      - "Designed a process for automatic batch posting, and worked with clients to implement it."
 
   - title: Software Engineer
     company: Jibe
@@ -58,8 +57,8 @@ positions:
       finish: Mar. 2012
     highlights:
       - "Created a bookmarklet-based integration to allow corporate clients to interact with Jibe's job distribution product from within their applicant tracking systems."
-      - "Integrated with job posting endpoints using various techniques: APIs, HTTP automation, browser automation, and in one extreme case, even an army of custom routers deployed around the country."
-      - "Built a web frontend to enable clients to control and track their postings---mostly in IE8."
+      - "Integrated with job boards using various techniques: APIs, HTTP automation, browser automation, and even an army of custom routers across the country."
+      - "Built an IE8-compliant web frontend to enable clients to control and track their postings."
 
   - title: Software Engineering Intern
     company: Jibe
@@ -68,4 +67,4 @@ positions:
       finish: Jan. 2012
     highlights:
       - "Built an internal tool to allow the operations team to view and update data around corporate clients and their candidates."
-      - "Refactored a monolithic, serial, client-centric scraper codebase into a modular, parallelizable library that removed code duplication based on the clients' applicant tracking systems."
+      - "Refactored a monolithic, serial scraper codebase into a modular, parallelizable library with vastly reduced code duplication."
