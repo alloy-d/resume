@@ -182,68 +182,30 @@
 
 \section{Skills}
 %
-<% data.skills.each do |section| %>
+<% data.skills.each do |section| -%>
 \textbf{<%= section.group %>}
 \begin{innerlist}
 \item <%= section.items.join(', ') %>
 \end{innerlist}
 
 \blankline
-<% end %>
 
-\textbf{Operating Systems}
+<% end %><%# end skills %>
+
+\section{Experience}
+%
+<% data.positions.each do |position| -%>
+\textbf{<%= position.title %>},
+<%= position.company %> \hfill \textbf{<%= position.term.start %>--<%= position.term.finish %>}
+<% if position.responsibilities && !position.responsibilities.empty? -%>
+<% position.responsibilities.each do |responsibility| -%>
 \begin{innerlist}
-\item \textit{Proficient}: Linux (Arch, Fedora, Debian, and others), FreeBSD
-\item \textit{Familiar}: Solaris; Windows XP, Vista, and 7
+\item <%= responsibility %>
 \end{innerlist}
+<% end # position responsibilities -%>
+<% end # position responsibilities empty? -%>
 
-\blankline
-
-\textbf{Tools}
-\begin{innerlist}
-\item \textit{Proficient}: Exim, Git, Mercurial, RCS, \textsc{Unix} Command Line
-\item \textit{Familiar}: Apache, Gnuplot, Maple, Microsoft Office,
-Subversion, SymPy
-\end{innerlist}
-
-\section{Activities}
-\textbf{Computer Science and Software Development}
-\begin{outerlist}
-\item[] \textit{\href{http://github.com/alloy-d/goauth}{GoAuth}} \hfill \textbf{Summer 2010}
-  \begin{innerlist}
-    \item A Go library for interacting with web services speaking OAuth.
-  \end{innerlist}
-
-\item[] \textit{\href{http://github.com/alloy-d/now.go}{now.go}} \hfill \textbf{Summer 2010}
-  \begin{innerlist}
-    \item A minimalist command-line interface and Web
-        application for finishing tasks.
-  \end{innerlist}
-
-\item[] \textit{Pok\'estruct (Working Title)} \hfill \textbf{Fall
-  2009}\\
-  \textit{Supported by the
-    \href{http://www.cs.rpi.edu/~moorthy/rcos/}{Rensselaer Center for
-      Open Source}.}
-  \begin{innerlist}
-  \item Computer science presented in terms of the Pok\'emon franchise.
-  \end{innerlist}
-\end{outerlist}
-
-
-\blankline
-
-\textbf{Web Design and Development}
-
-\begin{outerlist}
-\item[] \textit{\href{http://www.tumblr.com/themes/by/alloy-d}
-  {Themes for Tumblr-Powered Sites}} \hfill \textbf{February
-  2009---Present}
-  \begin{innerlist}
-  \item Attractive and functional themes for
-    \href{http://tumblr.com/}{Tumblr}, a popular blogging platform.
-  \end{innerlist}
-\end{outerlist}
+<% end # positions -%>
 
 \section{Education}
 %

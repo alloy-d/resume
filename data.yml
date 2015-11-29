@@ -26,8 +26,30 @@ skills:
       - AWS (EC2, S3, Route53, and others)
 
 positions:
-  - company: Overture
-    title: Lead Engineer
+  - title: Lead Engineer
+    company: Overture
+    term:
+      start: Nov. 2014
+      finish: Oct. 2015
+    responsibilities:
+      - Built a lot of prototypes.
+      - Embraced DevOps.
+      - Took on technical leadership.
 
-  - company: Jibe
-    title: Sr. Software Engineer
+  - title: Sr. Software Engineer
+    company: Jibe
+    term:
+      start: Mar. 2012
+      finish: Oct. 2014
+
+  - title: Software Engineer
+    company: Jibe
+    term:
+      start: Jan. 2012
+      finish: Mar. 2012
+
+  - title: Software Engineering Intern
+    company: Jibe
+    term:
+      start: Oct. 2011
+      finish: Jan. 2012
