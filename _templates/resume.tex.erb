@@ -163,7 +163,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\makeheading{<%= data.name %>}
+\makeheading{<%= fmt[data.name] %>}
 
 \section{Contact}
 %
@@ -176,16 +176,16 @@
 \newlength{\rcollength}\setlength{\rcollength}{1.73in}%
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-<%= data.location %>         & \textit{E-mail:}
-\href{mailto:<%= data.email %>}{<%= data.email %>}
+<%= fmt[data.location] %>         & \textit{E-mail:}
+\href{mailto:<%= data.email %>}{<%= fmt[data.email] %>}
 \end{tabular}
 
-\section{Skills}
+\section{Selected Skills}
 %
 <% data.skills.each do |section| -%>
-\textbf{<%= section.group %>}
+\textbf{<%= fmt[section.group] %>}
 \begin{innerlist}
-\item <%= section.items.join(', ') %>
+\item <%= section.items.map(&fmt).join(', ') %>
 \end{innerlist}
 
 \blankline
@@ -194,19 +194,21 @@
 
 \section{Experience}
 %
-<% data.positions.each do |position| -%>
-\textbf{<%= position.title %>},
-<%= position.company %> \hfill \textbf{<%= position.term.start %>--<%= position.term.finish %>}
+<% data.positions.each_with_index do |position, index| -%>
+\textbf{<%= fmt[position.title] %>},
+<%= fmt[position.company] %> \hfill \textbf{<%= fmt[position.term.start] %>--<%= fmt[position.term.finish] %>}
 <% if position.highlights && !position.highlights.empty? -%>
 <% position.highlights.each do |highlight| -%>
 \begin{innerlist}
-\item <%= highlight %>
+\item <%= fmt[highlight] %>
 \end{innerlist}
 <% end # position highlights -%>
 <% end # position highlights empty? -%>
+<% if index + 1 < data.positions.count -%>
 
 \blankline
 
+<% end # last position check -%>
 <% end # positions -%>
 \end{document}
 
