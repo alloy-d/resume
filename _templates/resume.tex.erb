@@ -183,10 +183,9 @@
 \section{Selected Skills}
 %
 <% data.skills.each do |section| -%>
-\textbf{<%= fmt[section.group] %>}
-\begin{innerlist}
-\item <%= section.items.map(&fmt).join(', ') %>
-\end{innerlist}
+\textit{\textbf{<%= fmt[section.group] %>}}
+
+<%= section.items.map(&fmt).join(', ') %>
 
 \blankline
 

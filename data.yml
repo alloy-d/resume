@@ -22,13 +22,13 @@ skills:
       - Packer
       - Docker
       - AWS (EC2, S3, Route53, and others)
-      - Scraping \& Automation
-      - Functional Programming
       - PostgreSQL
       - Redis
       - MongoDB
       - React
-      - Rails
+      - Ruby on Rails
+      - Scraping \& Automation
+      - Functional Programming
 
   # - group: Platforms
   #   items:
