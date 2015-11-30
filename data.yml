@@ -13,7 +13,7 @@ skills:
       - JavaScript
       - HTML/CSS
       - Shell (Bourne)
-  - group: Tools
+  - group: Tools, Libraries, \& Methodologies
     items:
       - Git
       - Unix Command Line
@@ -21,6 +21,15 @@ skills:
       - Vagrant
       - Packer
       - Docker
+      - AWS (EC2, S3, Route53, and others)
+      - Scraping \& Automation
+      - Functional Programming
+      - PostgreSQL
+      - Redis
+      - MongoDB
+      - React
+      - Rails
+
   # - group: Platforms
   #   items:
   #     - AWS (EC2, S3, Route53, and others)
@@ -34,7 +43,7 @@ positions:
     highlights:
       - Provided infrastructural operations support to both the development team and the company at large.  As demands grew, transitioned from higher-level PaaS services to closely managed virtual servers.
       - Built processes that enabled both deployment to virtual servers and development in a local, VM-based environment that mirrored the production servers.
-      - Coordinated the efforts of specialized engineers, including an iOS developer and a media scientist.
+      - Coordinated specialist engineers, including an iOS developer and a media scientist.
       - Performed collaborative architecture and code reviews; provided mentorship and debugging help.
       - Worked closely with the founder to streamline design and development workflows; ran an Agile process.
       - Prototyped product and service ideas.  Put significant work into at least three web frontend prototypes, as well as a proof-of-concept video processing service.
